@@ -2,13 +2,10 @@
 
 @import './bases/reset';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/peculiarities';
-@import './layout/team';
-@import './layout/clients';
+@import './components/logo';
+@import './components/conteiner';
+@import './components/header';
+@import './components/contact';
 
-@import './components/footer';
-@import './components/join';
-@import './components/send';
+
 
