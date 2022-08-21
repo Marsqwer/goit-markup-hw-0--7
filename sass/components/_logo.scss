@@ -8,12 +8,20 @@
     text-decoration: none;
 }
 
-.logo-web {
+.logo__web {
     color: var(--accent-color);
-    /*цвет контента*/
 }
-.logo,
-.nav-link,
-.nav-cont {
-    text-decoration: none;
+
+
+.foot {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.logo__studio {
+    color: var(--black-color);
+}
+
+.logo__studio--footer {
+    color: var(--white-color);
 }

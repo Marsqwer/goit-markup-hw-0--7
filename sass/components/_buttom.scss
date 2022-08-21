@@ -1,0 +1,28 @@
+.button {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--white-color);
+    background: var(--accent-color);
+    /*цвет фона*/
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    margin: 0;
+    border: 0;
+    /*рамка*/
+    border-radius: 4px;
+    /*скругление рамки*/
+    margin-left: auto;
+    margin-right: auto;
+    &:hover,
+        &:focus {
+            background: var(--button-accent-color);
+            /*фон*/
+    
+        }
+        &.formik{
+            margin-top: 30px;
+        }
+}

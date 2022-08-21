@@ -1,11 +1,25 @@
 @import './utils/root';
 
 @import './bases/reset';
+@import './components/conteiner';
 
 @import './components/logo';
-@import './components/conteiner';
+
 @import './components/header';
-@import './components/contact';
+@import './components/headernav';
+@import './components/menu';
+@import './components/hero';
+@import './components/buttom';
+@import './components/modal';
+@import './components/compania';
+@import './components/doing';
+@import './components/icon';
+@import './components/logotip';
+@import './components/footer/menufoot';
+@import './components/footer/iconfoot';
+@import './components/footer/footcontact';
 
 
 
+@import './portfolio/buttonmenu';
+@import './portfolio/cartportfolio';
