@@ -1,25 +1,25 @@
-@import './utils/root';
+// Утилиты
+@import './utils/variables';
+@import './utils/visually-hidden';
 
-@import './bases/reset';
+// Отдельные блоки БЕМ
 @import './components/conteiner';
-
-@import './components/logo';
-
-@import './components/header';
-@import './components/headernav';
-@import './components/menu';
-@import './components/hero';
-@import './components/buttom';
+@import './components/section';
+@import './components/button';
+@import './components/list';
+@import './components/h2-title';
 @import './components/modal';
-@import './components/compania';
-@import './components/doing';
-@import './components/icon';
-@import './components/logotip';
-@import './components/footer/menufoot';
-@import './components/footer/iconfoot';
-@import './components/footer/footcontact';
+@import './components/form-modal';
+@import './components/logo';
+@import './components/social-icon-list';
 
-
-
-@import './portfolio/buttonmenu';
-@import './portfolio/cartportfolio';
+// Блоки БЕМ секций
+@import './components/header';
+@import './components/hero';
+@import './components/skils-box';
+@import './components/box-work';
+@import './components/box-person';
+@import './components/client-logo';
+@import './components/_filtre-list';
+@import './components/portfolio-block';
+@import './components/footer';

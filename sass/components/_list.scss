@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    gap: 30px;
+
+    &--header {
+        margin-left: auto;
+        align-items: center;
+    }
+
+    &--portfolio-grid {
+        flex-wrap: wrap;
+    }
+}

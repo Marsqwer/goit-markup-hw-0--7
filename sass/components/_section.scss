@@ -1,0 +1,14 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__team {
+        background-color: $dop-back-color;
+    }
+
+    &__footer {
+        background-color: $back-color;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

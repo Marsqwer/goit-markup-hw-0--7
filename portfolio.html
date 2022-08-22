@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,37 +18,36 @@
 <body>
     <!--Шапка сайта-->
     <header class="header">
-        <div class="conteiner header__nav">
-            <nav class="header__nav">
-                <a href="./index.html" class="logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+        <div class="conteiner header-nav">
+            <nav class="header-nav">
+                <a href="./index.html" class="logo"><span class="logo__firs">Web</span><span
+                        class="logo__end">Studio</span></a>
 
-                <ul class="menu__nav">
-                    <li class="item"><a class="nav__link" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="nav__link act" href="./portfolio.html">Портфолио</a></li>
-                    <li class="item"><a class="nav__link" href="">Контакты</a></li>
+                <ul class="header-nav__menu">
+                    <li class="list__item"><a class="header-nav__link" href="./index.html" id="home">Студия</a></li>
+
+                    <li class="list__item"><a class="header-nav__link header-nav__link--act"
+                            href="./portfolio.html">Портфолио</a></li>
+
+                    <li class="list__item"><a class="header-nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
 
-            <div class="telefon">
-                <!--<a class="nav-cont" href="tel:+380961111111">-->
-                <ul class="menu-nav-cont">
-                    <!--<a class="nav-cont" href="mailto:info@devstudio.com">-->
-                    <li class="item-fill">
-                        <a href="" class="contact-soc-link">
-                            <svg class="contact-soc-icon" width="16" heigt="12">
-                                <use href="./img/contact.svg#icon-envelope"></use>
-                            </svg>info@devstudio.com</a>
-            
-                    </li>
-                    <li class="item-fill">
-                        <a href="" class="contact-soc-link">
-                            <svg class="contact-soc-icon-top" width="10" heigt="16">
-                                <use href="./img/contact.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
-            
-                    </li>
-                </ul>
-            </div>
+            <ul class="list list--header">
+                <li class="list__item">
+                    <a class="header-nav__link header-nav__link--cont" href="mailto:info@devstudio.com">
+                        <svg class="header-nav__icon">
+                            <use href="./images/icons.svg#icon-convert1"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+
+                <li class="list__item">
+                    <a class="header-nav__link header-nav__link--cont" href="tel:+380961111111">
+                        <svg class="header-nav__icon header-nav__icon--phone">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
         </div>
     </header>
 
@@ -57,203 +55,271 @@
     <main>
         <h1 class="visually-hidden">Портфолио наших работ</h1>
         <!--Меню портфолио-->
-        <section class="section menu-btn">
+        <section class="section">
             <div class="conteiner">
-                <ul class="menu-btn-list">
-                    <li class="item"><button type="button" class="filtre">Все</button></li>
-                    <li class="item"><button type="button" class="filtre">Веб-сайты</button></li>
-                    <li class="item"><button type="button" class="filtre">Приложения</button></li>
-                    <li class="item"><button type="button" class="filtre">Дизайн</button></li>
-                    <li class="item"><button type="button" class="filtre">Маркетинг</button></li>
+
+                <ul class="filtre-list">
+                    <li><button type="button" class="filtre-list__button">Все</button></li>
+                    <li><button type="button" class="filtre-list__button">Веб-сайты</button></li>
+                    <li><button type="button" class="filtre-list__button">Приложения</button></li>
+                    <li><button type="button" class="filtre-list__button">Дизайн</button></li>
+                    <li><button type="button" class="filtre-list__button">Маркетинг</button></li>
                 </ul>
 
                 <!--Портфолио-->
 
-                <ul class="portfolio">
-                    <li class="portfolio-cart">
-                        <div class="product-actions">
-                            <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/portfolio.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Технокряк</h2>
-                                <p class="portfolio-text">Веб-сайт</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="portfolio-cart">
-                        
-                        <a href="" target="_blank" class="cart-link">
-                            <div class="product-actions">
-                            <img width="370px" class="img-portfolio" src="./img/bascet.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
+                <ul class="list list--portfolio-grid">
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/portfolio.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
                                 </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
-                                <p class="portfolio-text">Дизайн</p>
-                            </div>
-                        </a>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Технокряк</h2>
+                                    <p class="portfolio-block__text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
-                    <li class="portfolio-cart">
-                        <div class="product-actions">
-                        <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/fish.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Ресторан Seafood</h2>
-                                <p class="portfolio-text">Приложение</p>
-                            </div>
-                        </a>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/bascet.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Постер New Orlean vs Golden Star</h2>
+                                    <p class="portfolio-block__text">Дизайн</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
-                    <li class="portfolio-cart">
-                        <div class="product-actions">
-                        <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/headphones.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Проект Prime</h2>
-                                <p class="portfolio-text">Маркетинг</p>
-                            </div>
-                        </a>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/fish.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Ресторан Seafood</h2>
+                                    <p class="portfolio-block__text">Приложение</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
-                    <li class="portfolio-cart">
-                        <div class="product-actions">
-                        <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/boxsis.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Проект Boxes</h2>
-                                <p class="portfolio-text">Приложение</p>
-                            </div>
-                        </a>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/headphones.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Проект Prime</h2>
+                                    <p class="portfolio-block__text">Маркетинг</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
-                    <li class="portfolio-cart">
-                            <div class="product-actions">
-                        <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/computer.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                                <p class="portfolio-text">Веб-сайт</p>
-                            </div>
-                        </a>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/boxsis.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Проект Boxes</h2>
+                                    <p class="portfolio-block__text">Приложение</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
-                    <li class="portfolio-cart">
-                        <div class="product-actions">
-                        <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/books.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Издание Limited Edition</h2>
-                                <p class="portfolio-text">Дизайн</p>
-                            </div>
-                        </a>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/computer.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Inspiration has no Borders</h2>
+                                    <p class="portfolio-block__text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
-                    <li class="portfolio-cart">
-                            <div class="product-actions">
-                        <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/prijs.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Проект LAB</h2>
-                                <p class="portfolio-text">Маркетинг</p>
-                            </div>
-                        </a>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/books.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Издание Limited Edition</h2>
+                                    <p class="portfolio-block__text">Дизайн</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
-                    <li class="portfolio-cart">
-                            <div class="product-actions">
-                        <a href="" target="_blank" class="cart-link">
-                            <img width="370px" class="img-portfolio" src="./img/laptop.jpg" alt="" />
-                            <p class="product-thumb">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
-                                позволит посетителю получить
-                                исчерпывающие сведения о компании или частном лице.</p>
-                            </div>
-                            <div class="item-div">
-                                <h2 class="portfolio-title">Growing Business</h2>
-                                <p class="portfolio-text">Приложение</p>
-                            </div>
-                        </a>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/prijs.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Проект LAB</h2>
+                                    <p class="portfolio-block__text">Маркетинг</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="list__item">
+
+                        <div class="portfolio-block">
+                            <a href="" target="_blank" class="portfolio-block__link">
+                                <div class="portfolio-block__owerlay-block">
+                                    <img width="370" src="./img/laptop.jpg" alt="" />
+                                    <p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с
+                                        разным уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения
+                                        о компании или частном лице.</p>
+                                </div>
+                                <div class="portfolio-block__description">
+                                    <h2 class="portfolio-block__title">Growing Business</h2>
+                                    <p class="portfolio-block__text">Приложение</p>
+                                </div>
+                            </a>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
     <!--Футер-->
-    <footer class="footer-section">
-        <div class="conteiner footer-content">
-            <div>
-            <a href="./index.html" class="logo foot"><span class="logo__web">Web</span><span
-                    class="logo__studio logo__studio--footer">Studio</span></a>
-            <address>
-                <ul class="contact-footer">
-                    <li class="item-foot">
-                        <a class="address" href="https://goo.gl/maps/L429s9yHfbcvS6HbA" target="_blank"
-                            rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li class="item-foot"><a class="footer-cont" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="item-foot"><a class="footer-cont" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-                </div>
-                <div class="spisok">
-                
-                    <p class="golova">присоединяйтесь</p>
-                    <ul class="copy-soc list">
-                        <li class="stud-soc-item">
-                            <a href="" class="stud-soc-link">
-                                <svg class="stud-soc-icon" width="20" heigt="20">
-                                    <use href="./img/icons.svg.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
+    <footer class="section__footer">
+        <div class="conteiner footer-box">
+            <div class="footer-box__content">
+
+                <a href="./index.html#home" class="logo logo--footer">
+                    <span class="logo__firs">Web</span><span class="logo__end logo__end--white">Studio</span>
+                </a>
+
+                <address>
+                    <ul class="footer-box__list">
+                        <li class="footer-box__item">
+                            <a class="footer-box__address" href="https://goo.gl/maps/L429s9yHfbcvS6HbA" target="_blank"
+                                rel="noopener noreferrer nofollow">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="syud-soc-item">
-                            <a href="" class="stud-soc-link">
-                                <svg class="stud-soc-icon" width="20" heigt="20">
-                                    <use href="./img/icons.svg.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
+
+                        <li class="footer-box__item">
+                            <a class="footer-box__cont" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="stud-soc-item">
-                            <a href="" class="stud-soc-link">
-                                <svg class="stud-soc-icon" width="20" heigt="20">
-                                    <use href="./img/icons.svg.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="stud-soc-item">
-                            <a href="" class="stud-soc-link">
-                                <svg class="stud-soc-icon" width="20" heigt="20">
-                                    <use href="./img/icons.svg.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
+
+                        <li class="footer-box__item">
+                            <a class="footer-box__cont" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
-                
+                </address>
+            </div>
+
+            <div class="social-icon-box">
+                <p class="social-icon-box__title">присоединяйтесь</p>
+
+                <ul class="social-icon-list">
+
+                    <li class="social-icon-list__item">
+                        <a class="social-icon-list__link social-icon-list__link--footer"
+                            href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="social-icon-list__icon">
+                                <use href="./img/icons.svg.svg#icon-instagram"></use>
+                            </svg></a>
+                    </li>
+
+                    <li class="social-icon-list__item">
+                        <a class="social-icon-list__link social-icon-list__link--footer" href="https://twitter.com/"
+                            target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="social-icon-list__icon">
+                                <use href="./img/icons.svg.svg#icon-twitter"></use>
+                            </svg></a>
+                    </li>
+
+                    <li class="social-icon-list__item">
+                        <a class="social-icon-list__link social-icon-list__link--footer"
+                            href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="social-icon-list__icon">
+                                <use href="./img/icons.svg.svg#icon-facebook"></use>
+                            </svg></a>
+                    </li>
+
+                    <li class="social-icon-list__item">
+                        <a class="social-icon-list__link social-icon-list__link--footer"
+                            href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer nofollow">
+                            <svg class="social-icon-list__icon">
+                                <use href="./img/icons.svg.svg#icon-linkedin"></use>
+                            </svg></a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <form class="footter-form">
+                <div>
+                    <p class="social-icon-box__title">Подпишитесь на рассылку</p>
+
+                    <label class="footter-form__label">
+                        <input type="email" name="email" placeholder="E-mail" />
+                    </label>
                 </div>
-            </address>
+
+                <div>
+                    <button type="submit" class="button button--footer">Подписаться
+                        <svg class="button__svg">
+                            <use href="./img/svg.send.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+
         </div>
     </footer>
 </body>

@@ -1,0 +1,60 @@
+$white-color: #fff;
+$black-color: #000;
+$titile-color: #212121;
+$text-color: #757575;
+$back-color: #2f303a;
+$accent-color: #2196f3;
+$button-accent-color: #188ce8;
+$dop-text-color: rgba(255, 255, 255, 0.6);
+$dop-back-color: #f5f4fa;
+$box-shadow-color: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+// ///////////////////////// //
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white-color;
+    color: $text-color;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
