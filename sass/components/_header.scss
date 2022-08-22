@@ -1,57 +1,57 @@
-.header-nav {
+.header__nav {
     display: flex;
     align-items: center;
-}
-.header-nav {
     font-weight: 500;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-
+        line-height: 1.1;
+        letter-spacing: 0.02em;
 }
 
-.menu-nav {
+
+.menu__nav {
     display: flex;
     list-style: none;
     margin-left: 93px;
+& .item+.item {
+margin-left: 50px;
+}
+& .nav__link {
+    text-decoration: none;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+color: var(--h-text-color);
+position: relative;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+& .nav__link.act::after {
+content: "";
+display: block;
+width: 48px;
+height: 4px;
+background: #2196F3;
+border-radius: 2px;
+position: absolute;
+bottom: -1px;
+width: 100%;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   & .nav-link.act {
+       color: #2196F3;
+   }
 }
 
-.menu-nav .item+.item {
-    margin-left: 50px;
-
-}
-.menu-nav .nav-link {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--h-text-color);
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link:hover {
+.nav__link:hover {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2196F3;
 }
 
-.menu-nav .nav-link.act::after {
-    content: "";
-    display: block;
-    width: 48px;
-    height: 4px;
-    background: #2196F3;
-    border-radius: 2px;
-    position: absolute;
-    bottom: -1px;
-    width: 100%;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-link:focus {
+.nav__link:focus {
     color: #2196F3;
 }
 
-.nav-menu .nav-link {
+.nav__menu .nav__link {
+
     color: var(--h-text-color);
     list-style: none;
     font-weight: 500;
@@ -60,9 +60,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-nav .nav-link.act {
-    color: #2196F3;
-}
+
 
 .menu-nav-cont {
     display: flex;
